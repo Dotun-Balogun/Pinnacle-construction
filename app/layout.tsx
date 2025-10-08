@@ -1,20 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "./shared/Navbar";
+import Footer from "./shared/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter", 
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], 
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
-  title: "Pinnacle construction",
-  description: "pinnacle construction  are the best construction team for your work",
+  title: "Pinnacle Construction",
+  description:
+    "Pinnacle Construction — experts in modern building and renovation projects.",
 };
 
 export default function RootLayout({
@@ -25,9 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        {children}
+        <main>
+          <Navbar/>
+            {children}
+        <Footer/>
+        </main>
       </body>
     </html>
   );
