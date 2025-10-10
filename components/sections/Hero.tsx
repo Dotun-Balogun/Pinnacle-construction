@@ -16,7 +16,7 @@ const Hero = () => {
       variants={StripParentVariants}
       initial="hidden"
       animate="visible"
-      className=" relative  min-h-[100dvh] "
+      className=" relative  min-h-screen "
     >
       <Navbar />
       <div className="flex flex-col lg:flex-row items-center lg:items-start  lg:gap-x-1   max-w-7xl mx-auto px-4 ">
@@ -28,7 +28,7 @@ const Hero = () => {
         >
           <h1 className="text-center lg:text-left text-3xl md:text-5xl lg:text-7xl text-secondary font-bold font-Nunito text-wrap ">
             <span>Start</span> <br className="hidden lg:block" />
-            <span>New</span> <br className="hidden" />
+            <span>New</span> <br className="hidden lg:block" />
             <span className="text-primary">Projects</span>
           </h1>
 
@@ -52,19 +52,19 @@ const Hero = () => {
               delay: 0.4,
             },
           }}
-          className="relative z-40 h-auto w-full lg:max-w-6xl mt-1 lg:mt-0"
+          className="relative z-40 h-[400px] lg:h-[800px] lg:w-[900px} lg:max-w-6xl 1 lg:mt-0"
         >
           <Image
             src={manModel}
             alt="male model architect"
-            className="-z-90 w-full h-full bg-cover"
-            sizes="(max-width: 660px) 100vw, (max-width: 1024px) 50vw, 600px"
+            className="-z-90 w-full h-full bg-contain"
             priority
           />
         </motion.div>
       </div>
       {/* strips */}
-      <div className="">
+      
+<div className="absolute bottom-0 top-0 right-0">
         <motion.div
           variants={StripChildVariants}
           className="absolute  right-0 
@@ -75,14 +75,14 @@ const Hero = () => {
         <motion.div
           variants={StripChildVariants}
           className="absolute right-0
-          lg:top-0 bottom-10 border-l-300 border-b-300
+          lg:top-0 bottom-0 border-l-300 border-b-300
           lg:border-l-550 -z-50 lg:border-b-550 border-b-primary/80 border-l-transparent"
         ></motion.div>
         <motion.div
           variants={StripChildVariants}
           className="absolute right-0 
           lg:top-0 bottom-0  border-l-400 border-b-400
-          lg:border-l-725  z-10 lg:border-b-725 border-b-primary/50 border-l-transparent"
+          lg:border-l-725  -z-10 lg:border-b-725 border-b-primary/50 border-l-transparent"
         ></motion.div>
       </div>
     </motion.div>

@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-7x; mx-auto py-4 lg:px-10 ">
+    <div className="z-1000 max-w-7x; mx-auto py-4 lg:px-10 ">
       <div className="flex items-center text-secondary gap-x-10 justify-between">
         {/* <Link href="/"> */}
           <Link href="/" className="block">
