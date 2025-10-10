@@ -69,19 +69,19 @@ const Hero = () => {
           variants={StripChildVariants}
           className="absolute  right-0 
 
-          lg:top-68 bottom-0 border-l-420 border-b-420
+          lg:top-68 bottom-0 border-l-200 border-b-200
           lg:border-l-450 z-100 lg:border-b-450 border-b-primary border-l-transparent"
         ></motion.div>
         <motion.div
           variants={StripChildVariants}
           className="absolute right-0
-          lg:top-0 bottom-10 border-l-450 border-b-450
+          lg:top-0 bottom-10 border-l-300 border-b-300
           lg:border-l-550 -z-50 lg:border-b-550 border-b-primary/80 border-l-transparent"
         ></motion.div>
         <motion.div
           variants={StripChildVariants}
           className="absolute right-0 
-          lg:top-0 bottom-0  border-l-600 border-b-600
+          lg:top-0 bottom-0  border-l-400 border-b-400
           lg:border-l-725  z-10 lg:border-b-725 border-b-primary/50 border-l-transparent"
         ></motion.div>
       </div>
