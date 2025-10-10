@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "./shared/Navbar";
+// import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
 
 
@@ -30,10 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${poppins.variable} antialiased`}
+        className={`${inter.variable} ${poppins.variable} min-h-screen flex flex-col antialiased`}
       >
-        <main>
-          <Navbar/>
+        <main className='flex-1'>
+          {/* <Navbar/> */}
             {children}
         <Footer/>
         </main>
