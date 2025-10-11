@@ -9,6 +9,7 @@ import {
   StripChildVariants,
   StripParentVariants,
 } from "@/app/animation/animation";
+import { FaPlay } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -19,12 +20,12 @@ const Hero = () => {
       className=" relative  min-h-screen "
     >
       <Navbar />
-      <div className="flex flex-col lg:flex-row items-center lg:items-start  lg:gap-x-1   max-w-7xl mx-auto px-4 ">
+      <div className="flex flex-col  lg:flex-row items-center lg:items-start  lg:gap-x-1   max-w-7xl mx-auto px-4 ">
         <motion.div
           variants={HeroVariants}
           initial="hidden"
           animate="visible"
-          className="lg:max-w-lg py-10 flex flex-col items-center  lg:items-start lg:justify-start space-y-4 "
+          className="lg:max-w-lg py-10 flex flex-col items-center  lg:items-start lg:justify-start space-y-10 "
         >
           <h1 className="text-center lg:text-left text-3xl md:text-5xl lg:text-7xl text-secondary font-bold font-Nunito text-wrap ">
             <span>Start</span> <br className="hidden lg:block" />
@@ -35,10 +36,18 @@ const Hero = () => {
           <p className="text-center lg:text-left  text-2xl lg:text-2xl text-secondary font-mono ">
             Don&apos;t get framed by the competition, trust our solid Reputation
           </p>
-
-          <div>
-            <div></div>
-          </div>
+                  <div className='flex gap-2'>
+                  <div className='w-25 h-25 rounded-full bg-gray-200 shadow-neutral-500  shadow-[ 0px_0px_0px_10px_rgb(233 234 236)]  justify-center items-center p-2 flex'>
+            <div className="h-full flex items-center justify-center w-full bg-primary rounded-full p-4">
+              <FaPlay size={30}/>
+            </div>
+          </div>      
+          <div className='flex justify-center flex-col gap-2'>
+           <h1 className='text-[18px] text-gray-400'>Watch Video </h1>
+           <h1 className ='text-[20px] text-secondary'>Why choose us?</h1>
+            </div>                                                                                                                                                                                                                                                                                           
+                  </div>
+          
         </motion.div>
 
         <motion.div
@@ -52,7 +61,7 @@ const Hero = () => {
               delay: 0.4,
             },
           }}
-          className="relative z-40 h-[400px] lg:h-[800px] lg:w-[900px} lg:max-w-6xl 1 lg:mt-0"
+          className="relative z-40 h-[500px] lg:h-[800px] lg:w-[900px} lg:max-w-6xl 1 lg:mt-0"
         >
           <Image
             src={manModel}

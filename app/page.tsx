@@ -1,9 +1,11 @@
-import Hero from "@/components/sections/Hero"
+// import Hero from "@/components/sections/Hero"
+// import Hero2 from "@/components/sections/Hero2"
 
 const HomePage = () => {
   return (
     <div className="  " >
-     <Hero/>
+     {/* <Hero/> */}
+     {/* <Hero2/> */}
     </div>
   )
 }
