@@ -97,7 +97,6 @@ const Hero2 = () => {
         priority
         className=''
       />
-      {/* Add your content here */}
       <div
         style={{ position: "relative", zIndex: 1 }}
         className="flex items-center justify-center w-full"
@@ -113,7 +112,7 @@ const Hero2 = () => {
             y:[4,2,0],
             transition:{
                 ease:'easeInOut',
-                duration:0.8
+                duration:2
             }
           }}
            className="relative w-full h-[100px]  lg:h-[200px] bg-secondary   text-primary flex items-center justify-center">
@@ -137,7 +136,7 @@ const Hero2 = () => {
                 damping:12,
                 delay:0.3,
                 
-                duration:0.9,
+                duration:3,
                 ease:'easeInOut'
 
                }

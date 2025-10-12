@@ -17,7 +17,7 @@ const Hero = () => {
       variants={StripParentVariants}
       initial="hidden"
       animate="visible"
-      className=" relative  h-[50dvh] py-4  md:min-h-screen "
+      className=" relative  h-[50dvh] md:h-[50dvh] py-4  lg:min-h-screen "
     >
       <Navbar />
       <div className="flex  flex-row items-center   md:items-start  md:gap-x-20   max-w-7xl mx-auto px-4 ">

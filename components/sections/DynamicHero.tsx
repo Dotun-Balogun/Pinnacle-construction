@@ -1,4 +1,7 @@
-import React from 'react'
+"use client"
+
+import React from "react"
+import Autoplay from "embla-carousel-autoplay"
 import {
   Carousel,
   CarouselContent,
@@ -6,18 +9,24 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Hero from './Hero'
-import Hero2 from './Hero2'
+import Hero from "./Hero"
+import Hero2 from "./Hero2"
 
 export const DynamicHero = () => {
   return (
     <div className="relative w-full">
-      <Carousel 
+      <Carousel
         className="w-full"
         opts={{
           align: "start",
           loop: true,
         }}
+        plugins={[
+          Autoplay({
+            delay: 4000, // 4 seconds per slide
+            stopOnInteraction: false, // keep playing after user interaction
+          }),
+        ]}
       >
         <CarouselContent>
           <CarouselItem>
@@ -28,8 +37,11 @@ export const DynamicHero = () => {
           </CarouselItem>
         </CarouselContent>
 
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
+        {/* Navigation Buttons grouped to the right */}
+        <div className="absolute right-4 bottom-4 flex space-x-2 z-10">
+          <CarouselPrevious className="static translate-y-0" />
+          <CarouselNext className="static translate-y-0" />
+        </div>
       </Carousel>
     </div>
   )
