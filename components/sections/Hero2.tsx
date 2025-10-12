@@ -145,7 +145,7 @@ const Hero2 = () => {
               
                className="absolute  top-1/2 translate-y-1/2  left-1/2 lg:px-20 px-6  -translate-x-1/2 w-full">
             <div className=" w-full    bg-primary text-secondary h-[70px]  lg:h-[100px] flex items-center justify-center text-[16px] px-6 lg:text-[28px] font-bold">
-            <h1>We'll get it ,like us there are none</h1>
+            <h1>We&apos;ll get it ,like us there are none</h1>
           </div>
               </motion.div>
             
