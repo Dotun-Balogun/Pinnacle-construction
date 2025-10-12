@@ -88,7 +88,7 @@ import * as motion from 'motion/react-client'
 const Hero2 = () => {
 
   return (
-    <div className="relative h-[50vh] lg:min-h-screen flex flex-col items-center justify-center">
+    <div className="relative h-[50vh]  lg:min-h-screen flex flex-col items-center justify-center">
       <Image 
         src={slide2}
         alt="Background"

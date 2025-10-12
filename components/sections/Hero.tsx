@@ -17,34 +17,34 @@ const Hero = () => {
       variants={StripParentVariants}
       initial="hidden"
       animate="visible"
-      className=" relative h-[50dvh]  lg:min-h-screen "
+      className=" relative  h-[50dvh] py-4  lg:min-h-screen "
     >
       <Navbar />
-      <div className="flex lflex-col  flex-row items-center lg:items-start  lg:gap-x-1   max-w-7xl mx-auto px-4 ">
+      <div className="flex lflex-col  flex-row items-center lg:items-start  lg:gap-x-20   max-w-7xl mx-auto px-4 ">
         <motion.div
           variants={HeroVariants}
           initial="hidden"
           animate="visible"
-          className="lg:max-w-l lg:py-10  py-4 flex flex-col  items-start justify-start space-y-8 lg:space-y-10 "
+          className="   lg:max-w-md lg:py-10 sm:py-2  flex flex-col  items-start justify-start space-y-6 lg:space-y-10 "
         >
-          <h1 className=" lg:text-left text-2xl md:text-5xl lg:text-7xl text-secondary font-bold font-Nunito text-wrap ">
+          <h1 className=" lg:text-left md:text-5xl lg:text-7xl text-secondary font-bold font-Nunito text-wra ">
             <span>Start</span> <br className="hidden lg:block" />
             <span>New</span> <br className="hidden lg:block" />
             <span className="text-primary">Projects</span>
           </h1>
 
-          <p className="text-left  lg:text-2xl text-secondary font-mono ">
+          <p className="text-left text-[12px]  lg:text-2xl text-secondary font-mono  ">
             Don&apos;t get framed by the competition, trust our solid Reputation
           </p>
                   <div className='flex gap-2 w-full'>
-                  <div className='lg:w-25 min-w-15 min-h-15 max-w-10 max-h-10 lg:h-25 rounded-full bg-gray-200 shadow-neutral-500  shadow-[ 0px_0px_0px_10px_rgb(233 234 236)]  justify-center items-center p-2 flex'>
-            <div className="h-full flex items-center justify-center w-full bg-primary rounded-full p-4">
-              <FaPlay size={30}/>
+                  <div className='lg:w-25 lg:min-w-20 lg:min-h-20  max-w-20 max-h-10 lg:h-25 rounded-full bg-gray-200 shadow-neutral-500  shadow-[ 0px_0px_0px_10px_rgb(233 234 236)]  justify-center items-center p-2 flex'>
+            <div className="h-full flex items-center text-secondary justify-center w-full bg-primary rounded-full p-2 lg:p-4">
+              <FaPlay size={10}/>
             </div>
           </div>      
           <div className='flex justify-center flex-col lg:gap-2'>
-           <h1 className='lg:text-[18px] text-gray-400'>Watch Video </h1>
-           <h1 className ='text-[12px] lg:text-[20px] text-secondary'>Why choose us?</h1>
+           <h1 className='text-[10px] lg:text-[18px] text-gray-400'>Watch Video </h1>
+           <h1 className ='text-[8px] lg:text-[20px] text-secondary'>Why choose us?</h1>
             </div>                                                                                                                                                                                                                                                                                           
                   </div>
           
@@ -61,7 +61,7 @@ const Hero = () => {
               delay: 0.4,
             },
           }}
-          className="relative z-40 h-auto  lg:h-[800px] lg:w-[900px} lg:max-w-6xl 1 lg:mt-0"
+          className="relative z-40  h-70 w-150    lg:h-150 lg:mt-0"
         >
           <Image
             src={manModel}
@@ -91,7 +91,7 @@ const Hero = () => {
           variants={StripChildVariants}
           className="absolute right-0 
           lg:top-0 bottom-0  border-l-250 border-b-250
-          lg:border-l-725  -z-10 lg:border-b-725 border-b-primary/50 border-l-transparent"
+          lg:border-l-1000  -z-10 lg:border-b-1000 border-b-primary/50 border-l-transparent"
         ></motion.div>
       </div>
     </motion.div>
