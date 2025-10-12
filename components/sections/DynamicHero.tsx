@@ -6,26 +6,31 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-
-
+import Hero from './Hero'
+import Hero2 from './Hero2'
 
 export const DynamicHero = () => {
   return (
-    <div>
-        <Carousel>
-            <CarouselContent>
-                {Array.from({length:5}).map((_,index)=>(
-<CarouselItem key={index}>
-<div>
-    {index +1}
-</div>
-                </CarouselItem>
-                ))}
-                
-            </CarouselContent>
-            <CarouselPrevious />
-      <CarouselNext />
-        </Carousel>
+    <div className="relative w-full">
+      <Carousel 
+        className="w-full"
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+      >
+        <CarouselContent>
+          <CarouselItem>
+            <Hero />
+          </CarouselItem>
+          <CarouselItem>
+            <Hero2 />
+          </CarouselItem>
+        </CarouselContent>
+
+        <CarouselPrevious className="left-4" />
+        <CarouselNext className="right-4" />
+      </Carousel>
     </div>
   )
 }
