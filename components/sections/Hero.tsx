@@ -61,7 +61,7 @@ const Hero = () => {
               delay: 0.4,
             },
           }}
-          className="relative z-40  h-70 w-150    lg:h-150 lg:mt-0"
+          className="relative z-40  h-50 w-150    lg:h-150 lg:mt-0"
         >
           <Image
             src={manModel}
