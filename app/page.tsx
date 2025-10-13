@@ -1,14 +1,11 @@
-// import Hero from "@/components/sections/Hero"
-// import Hero2 from "@/components/sections/Hero2"
+import LandingPage from "./pages/LandingPage"
 
-import { DynamicHero } from "@/components/sections/DynamicHero"
 
 const HomePage = () => {
   return (
-    <div className="  " >
-     {/* <Hero/> */}
-     {/* <Hero2/> */}
-     <DynamicHero/>
+    <div  >
+   
+     <LandingPage/>
     </div>
   )
 }
