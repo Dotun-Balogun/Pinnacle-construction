@@ -3,10 +3,11 @@ import background from "@/assets/images/row-bg.jpg";
 import safetyIcon from "@/assets/images/safety-icon.png";
 import * as motion from 'motion/react-client'
 import FeaturesCard from "../ui/card/FeaturesCard";
+import { featuresData } from "@/app/data/FeaturesDate";
 
 const FeatureAtGlance = () => {
   return (
-    <div className="relative min-h-screen flex flex-col py-10 overflow-hidden">
+    <div className="relative min-h-screen flex flex-col py-10 ">
       {/* Optimized Background */}
       <Image
         src={background}
@@ -37,8 +38,21 @@ const FeatureAtGlance = () => {
         </motion.div>
 
 
-        <div className="grid place-items-center">
-   <FeaturesCard/>
+   <div className=" lg:absolute lg:left-4 lg:right-4 lg:top-60 grid-cols-1 lg:grid lg:grid-cols-3  place-items-center">
+   {
+    featuresData.map((item,index)=>(
+      <FeaturesCard
+          key={index}
+          title={item.title}
+          description={item.description}
+          image={item.image}
+        />
+    ))
+   }
+     
+
+
+
       </div>
       </div>
 
