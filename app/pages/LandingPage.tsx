@@ -1,3 +1,4 @@
+import AboutOurCompany from "@/components/sections/AboutOurCompany"
 import { DynamicHero } from "@/components/sections/DynamicHero"
 import FeatureAtGlance from "@/components/sections/FeatureAtGlance"
 
@@ -6,6 +7,7 @@ const LandingPage = () => {
     <div className="flex flex-col" >
         <DynamicHero/>
         <FeatureAtGlance/>
+        <AboutOurCompany/>
     </div>
   )
 }
