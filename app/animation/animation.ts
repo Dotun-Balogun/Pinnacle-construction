@@ -40,3 +40,18 @@ export const StripChildVariants: Variants = {
         }
     }
 };
+
+
+
+export const ZoomInOutVariant: Variants = {
+  initial: { scale: 1 },
+  animate: {
+    scale: [-1, 1.06, 1],
+    transition: {
+      duration: 2.4, // slightly slower for elegance
+      ease: [0.45, 0, 0.55, 1], // custom cubic-bezier for smoothness
+      repeat: Infinity,
+      repeatType: "mirror", // reverses smoothly
+    },
+  },
+};

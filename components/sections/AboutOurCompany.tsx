@@ -13,7 +13,7 @@ const AboutOurCompany = () => {
     { name: "structure with long life" },
   ];
   return (
-    <div className=" flex flex-col justify-between  md:flex-row-reverse  min-h-screen">
+    <div className=" flex flex-col justify-between  md:flex-row-reverse   lg:min-h-screen">
       
       <div className='flex flex-col w-full p-4 lg:gap-y-4 '>
         <FaintText backgroundText={'About'} mainText='About our company'/>
@@ -69,7 +69,7 @@ const AboutOurCompany = () => {
        <Image
        src={aboutCompany}
       fill
-      
+      sizes='h-full w-full'
        alt="about"
        />
         </motion.div>

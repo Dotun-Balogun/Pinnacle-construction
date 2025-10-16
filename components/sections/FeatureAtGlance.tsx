@@ -4,6 +4,7 @@ import safetyIcon from "@/assets/images/safety-icon.png";
 import * as motion from "motion/react-client";
 import FeaturesCard from "../ui/card/FeaturesCard";
 import { featuresData } from "@/app/data/FeaturesDate";
+import { ZoomInOutVariant } from "@/app/animation/animation";
 
 const FeatureAtGlance = () => {
   return (
@@ -21,15 +22,22 @@ const FeatureAtGlance = () => {
         {/* Content */}
         <div className="max-w-7xl mx-auto px-4 flex flex-col space-y-8 text-white z-10">
           <motion.div className="flex flex-col items-center justify-center">
-            <Image
+            <motion.div
+            variants={ZoomInOutVariant}
+            initial='initial'
+            animate='animate'>
+              
+              <Image
               src={safetyIcon}
               alt="safety icon"
               width={80}
               height={80}
               className="h-20 w-20"
             />
+            </motion.div>
+            
             <h1 className="text-[18px] md:text-2xl text-primary">
-              Feature at Glance
+              Features at Glance
             </h1>
             <h1 className="text-[28px] md:text-[50px] text-center text-white font-medium">
               We know what your needs are
