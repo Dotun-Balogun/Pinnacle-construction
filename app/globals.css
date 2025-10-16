@@ -189,7 +189,7 @@
   /* Selection colors */
   ::selection {
     background-color: oklch(0.78 0.18 90 / 0.3); /* Yellow selection */
-    color: oklch(0.15 0.02 250);
+    color: white;
   }
   
   /* Custom scrollbar */

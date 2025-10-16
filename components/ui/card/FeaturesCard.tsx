@@ -38,6 +38,7 @@ const FeaturesCard = ({title, description, image,buttonText='Read more....'}:Fea
             src={image}
             alt={` ${title} service 1`}
             fill
+            sizes="h-full w-full"
             className="object-cover object-center"
           />
           <div className="relative z-10 w-full bg-black/50 px-4 h-[65px] flex items-center justify-between">
@@ -56,6 +57,7 @@ const FeaturesCard = ({title, description, image,buttonText='Read more....'}:Fea
               src={image}
               alt={` ${title} service 1`}
               fill
+               sizes="h-full w-full"
               className="object-cover z-10 object-center"
             />
 

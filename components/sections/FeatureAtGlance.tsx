@@ -36,7 +36,7 @@ const FeatureAtGlance = () => {
             </h1>
           </motion.div>
 
-          <div className=" lg:absolute lg:left-4 lg:right-4 lg:top-60 grid-cols-1 lg:grid lg:grid-cols-3  place-items-center">
+          <div className=" lg:absolute lg:left-4 lg:right-4 lg:top-60 sm:grid-cols-1 md:flex flex-wrap items-center justify-center gap-8 lg:grid lg:grid-cols-3  place-items-center">
             {featuresData.map((item, index) => (
               <FeaturesCard
                 key={index}

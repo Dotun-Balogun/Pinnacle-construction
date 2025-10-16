@@ -8,7 +8,7 @@ import Navbar from "@/app/shared/Navbar";
 const Hero2 = () => {
 
   return (
-    <div className="relative h-[50vh]  lg:min-h-screen flex flex-col  ">
+    <div className="relative h-[50vh] w-full lg:min-h-screen flex flex-col  ">
       <Image 
         src={slide2}
         alt="Background"
