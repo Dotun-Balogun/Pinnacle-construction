@@ -68,7 +68,7 @@ const Service = () => {
           </span>
           </div>
          </div>
-          <Button className="px-6 text-secondary text-base py-6 rounded-none hover:text-white hover:bg-secondary transition-colors">
+          <Button className="px-6 text-secondary bg-white text-base py-6 rounded-none hover:bg-secondary transition-colors">
             Free Consultation
           </Button>
          </div>
