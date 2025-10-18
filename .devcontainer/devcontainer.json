@@ -1,0 +1,42 @@
+{
+    "name": "Next.js / React Frontend",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+    // Run npm install (or yarn install) once the container is built
+    "postCreateCommand": "npm install",
+
+    // Automatically forward Next.js's default port
+    "forwardPorts": [3000],
+
+    // Essential tools and configurations
+    "features": {
+        // Optional: Include the GitHub CLI for command-line Git/PR management
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+
+    // VS Code-specific customizations
+    "customizations": {
+        "vscode": {
+            // Install key extensions for React, TypeScript, and styling
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "ms-vscode.vscode-typescript-next",
+                "bradlc.vscode-tailwindcss", // Add or remove based on your styling solution
+                "visualstudioexptteam.vscodeintellicode" 
+            ],
+            "settings": {
+                // Formatting and Linting rules to ensure consistency
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.tabSize": 2,
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.eslint": "explicit"
+                },
+                // Recommended for better type-checking performance
+                "typescript.tsc.autoDetect": "off" 
+            }
+        }
+    }
+}

@@ -69,7 +69,7 @@ const Service = () => {
           </div>
          </div>
           <Button className="px-6 text-secondary bg-white text-base py-6 rounded-none hover:bg-secondary transition-colors">
-            Free Consultation
+            Free Consultations
           </Button>
          </div>
         </div>
