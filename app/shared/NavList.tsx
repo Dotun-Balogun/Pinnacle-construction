@@ -36,7 +36,7 @@ export const menuList: MenuList[] = [
     name: "Shop",
     path: "#",
     dropdown: [
-      { name: "Shop", path: "/shop" },
+      { name: "Shops", path: "/shop" },
       { name: "Cart", path: "/carts" },
       { name: "WishList", path: "/wish-list" },
     ],
@@ -82,7 +82,7 @@ const NavList = ({ isMobile = false, onLinkClick }: NavListProps) => {
             >
               <DropdownMenuTrigger 
                 className={`
-                  relative flex justify-center items-center gap-1 
+                   relative flex w-full justify-center items-center gap-1 
                   group transition-colors duration-300 outline-none
                   ${hasActiveDropdown ? 'text-primary' : ''}
                   ${isMobile ? 'w-full justify-start' : ''}
@@ -107,13 +107,14 @@ const NavList = ({ isMobile = false, onLinkClick }: NavListProps) => {
               <DropdownMenuContent 
                 asChild 
                 align="start"
-                className="rounded-none p-0"
+                className="rounded-none p-0 w-full"
               >
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
+                  className="w-80"
                 >
                   {menu.dropdown.map((subMenu, idx) => {
                     const isSubMenuActive = pathname === subMenu.path;

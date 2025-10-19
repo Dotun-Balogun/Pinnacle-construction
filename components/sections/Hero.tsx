@@ -51,15 +51,15 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: 100 }}
           animate={{
             opacity: 1,
             x: 0,
             transition: {
-              duration: 0.9,
+              duration: 0.2,
               ease: "easeIn",
-              delay: 0.4,
-            },
+              delay: 1,
+            }
           }}
           className="relative z-40 sm:h-70 flex  h-60 w-150 md:w-200   md:h-[45rem] "
         >

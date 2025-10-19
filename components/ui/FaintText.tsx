@@ -6,7 +6,7 @@ type FaintTextProps = {
 };
 const FaintText = ({ backgroundText, mainText }: FaintTextProps) => {
   return (
-    <div className="hidden lg:flex  items-center justify-center relative z-0 ">
+    <div className="hidden h-45 lg:flex  items-center justify-center relative z-0 ">
       <div
         className="absolute 
       z- flex items-center justify-center"
@@ -15,7 +15,7 @@ const FaintText = ({ backgroundText, mainText }: FaintTextProps) => {
           {backgroundText}
         </h1>
       </div>
-      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-primary font-mono text-[18px] lg:text-2xl text-center md:text-left">
           {mainText}
         </h1>

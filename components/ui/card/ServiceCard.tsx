@@ -46,7 +46,7 @@ const ServiceCard = ({
       onTapCancel={() => setIsHovered(false)}
       onTap={() => setIsHovered(false)}
       whileHover={{
-        backgroundColor: "#fbbf24", // amber background
+        backgroundColor: "#fbbf24", 
         transition: { duration: 0.3, ease: "easeInOut" },
       }}
       whileTap={{
@@ -59,7 +59,6 @@ const ServiceCard = ({
         ${isLarge ? "lg:min-w-[500px] lg:max-w-[770px] h-[580px]" : ""}`}
     >
       <div className="w-full h-full flex flex-col items-center space-y-4 justify-center">
-        {/* Image bounces only when hovered */}
         <motion.div
           variants={BounceVariant}
           animate={isHovered ? "bounce" : "still"}
