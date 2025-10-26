@@ -55,17 +55,17 @@ const How = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full pl-20 '>
-                    <div className='bg-secondary relative h-full w-full    '>
-                        <div className='absolute top-10  flex flex-col -left-10 gap-10'>
+                <div className='w-full lg:pl-20 '>
+                    <div className='bg-secondary relative h-full w-full  p-10   '>
+                        <div className='lg:absolute lg:top-1/2 lg:-translate-y-1/2  flex flex-col -left-10 gap-10'>
                             {projectPhases
                             .map((phase)=>(
-                                <div key={phase.id} className='h-[136px] flex items-center justify-center gap-4'>
+                                <div key={phase.id} className='h-[136px] flex flex-col md:flex-row  items-center justify-center gap-4'>
                             <div className='w-[136px] text-white flex items-center justify-center bg-primary h-[136px] font-mono text-[56px]'>
                                 <h1>{phase.id}</h1>
                             </div>
 
-                            <div className='h-full flex flex-col  justify-center '>
+                            <div className='h-full flex flex-col  justify-center items-center lg:text-left text-center '>
 
                                 <h3 className='text-white lg:text-[36px] font-bold'>{phase.title}</h3>
                                 <p className="text-[18px]  text-[#aaaaaa] ">
