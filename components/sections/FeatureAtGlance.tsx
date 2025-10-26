@@ -4,7 +4,8 @@ import safetyIcon from "@/assets/images/safety-icon.png";
 import * as motion from "motion/react-client";
 import FeaturesCard from "../ui/card/FeaturesCard";
 import { featuresData } from "@/app/data/FeaturesDate";
-import { ZoomInOutVariant } from "@/app/animation/animation";
+import { ZoomInOutVariant } from "@/app/animation/animation";                        
+
 
 const FeatureAtGlance = () => {
   return (
