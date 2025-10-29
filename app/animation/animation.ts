@@ -48,10 +48,10 @@ export const ZoomInOutVariant: Variants = {
   animate: {
     scale: [-1, 1.06, 1],
     transition: {
-      duration: 2.4, // slightly slower for elegance
-      ease: [0.45, 0, 0.55, 1], // custom cubic-bezier for smoothness
+      duration: 2.4, 
+      ease: [0.45, 0, 0.55, 1], 
       repeat: Infinity,
-      repeatType: "mirror", // reverses smoothly
+      repeatType: "mirror", 
     },
   },
 };

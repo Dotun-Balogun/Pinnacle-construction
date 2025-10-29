@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import FaintText from '../ui/FaintText'
 import process from '@/assets/images/process.jpg'
+import * as motion from 'motion/react-client'
 
 const How = () => {
     const projectPhases = [
@@ -23,12 +24,12 @@ const How = () => {
 
     return (
         <div>
-            <div className='flex flex-col lg:flex-row justify-between '>
+            <div className='flex flex-col lg:flex-row justify-between  items-center  '>
                 <div className='max-w-2xl gap-4  space-y-6 '>
-                    <p className='lg:pl-40'>
+                    <div className='lg:pl-40'>
                         <FaintText backgroundText='How?' mainText='Process of Construction' />
-                    </p>
-                    <h1 className="text-primary font-mono text-2xl tracking-wide lg:text-2xl text-center md:text-left lg:hidden">
+                    </div>
+                    <h1 className="text-primary font-mono text-2xl tracking-wide lg:text-2xl text-center lg:text-left lg:hidden">
                         What we can do for you
                     </h1>
                     <div className='px-4 space-y-8' >
@@ -40,8 +41,8 @@ const How = () => {
                             </p>
                         </div>
                         <div className=''>
-                            <div className='relative h-[180px]  w-[317px] lg:w-[588px] lg:h-[334px] bg-primary'>
-                                <div className='absolute h-[180px] w-[317px] bottom-5 left-5 lg:w-[588px] lg:h-[334px]  '>
+                            <div className='relative h-[180px]  w-[317px] md:w-[588px] md:h-[334px] bg-primary'>
+                                <div className='lg:absolute h-[180px] w-[317px] bottom-5 left-5 lg:w-[588px] lg:h-[334px]  '>
                                     <Image
                                         src={process}
                                         alt='How it works'
@@ -55,24 +56,32 @@ const How = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full lg:pl-20 '>
-                    <div className='bg-secondary relative h-full w-full  p-10   '>
-                        <div className='lg:absolute lg:top-1/2 lg:-translate-y-1/2  flex flex-col -left-10 gap-10'>
+                <div className='w-full h-full lg:pl-20 lg:min-h-screen '>
+                    <div className='bg-secondary relative  w-full lg:min-h-screen lg:p-0  p-10   '>
+                        <div className='lg:absolute lg:top-1/2 lg:-translate-y-1/2  flex flex-col -left-10 gap-12'>
                             {projectPhases
                             .map((phase)=>(
-                                <div key={phase.id} className='h-[136px] flex flex-col md:flex-row  items-center justify-center gap-4'>
-                            <div className='w-[136px] text-white flex items-center justify-center bg-primary h-[136px] font-mono text-[56px]'>
+                                <motion.div
+                                 initial={{
+                                    x:0
+                                 }}
+                                 whileHover={{
+                                        x:-5,
+
+                                 }}
+                                 key={phase.id} className='h-[136px] group flex flex-col lg:flex-row  items-center justify-center gap-4'>
+                            <div className='w-[136px] shadow-lg group-hover:bg-white  group-hover:text-secondary text-white flex items-center justify-center bg-primary h-[136px] font-mono text-[56px]'>
                                 <h1>{phase.id}</h1>
                             </div>
 
-                            <div className='h-full flex flex-col  justify-center items-center lg:text-left text-center '>
+                            <div className='h-full flex flex-col  lg:justify-center items-center lg:items-start text-center '>
 
                                 <h3 className='text-white lg:text-[36px] font-bold'>{phase.title}</h3>
                                 <p className="text-[18px]  text-[#aaaaaa] ">
                                     {phase.description}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
  
                             ))}
                         </div>

@@ -14,20 +14,20 @@ import { Button } from "../ui/button";
 
 const Service = () => {
   return (
-    <div className="min-h-screen  ">
+    <div className="lg:min-h-screen  ">
       <div className="flex flex-col lg:gap-20">
         <FaintText
           backgroundText="Services"
           mainText="What we can do for you"
         />
-        <h1 className="text-primary font-mono text-2xl tracking-wide lg:text-2xl text-center md:text-left lg:hidden">
+        <h1 className="text-primary font-mono text-2xl tracking-wide lg:text-2xl text-center lg:text-left lg:hidden">
           What we can do for you
         </h1>
         <h1 className="lg:text-[50px] text-2xl font-extrabold text-center font-mono">
           Our construction Services
         </h1>
       </div>
-      <div className="min-h-screen bg-gray-200">
+      <div className="lg:min-h-screen bg-gray-200">
         <div className="grid md:grid-cols-3 lg:grid-cols-3 place-items-center gap-20 md:gap-10 lg:gap-15 py-10 px-4">
           {serviceData.map((service) => (
             <ServiceCard
