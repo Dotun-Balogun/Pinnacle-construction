@@ -73,7 +73,7 @@ const Testimonial = () => {
           Our Happy Customers
         </h1>
       </div>
-      <div className='mt-40 container px-4  shadow-2xl'>
+      <div className='mt-40  px-4  shadow-2xl'>
         <Carousel setApi={setApi}>
           <CarouselContent className='pt-40 lg:p-26'>
             {testimonials.map((testimonial) => (
