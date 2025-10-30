@@ -105,6 +105,7 @@ const PortfolioCard = ({
             src={image}
             alt={title}
             className='object-cover'
+            sizes='w-full h-full'
             fill
           />
         </div>

@@ -56,6 +56,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ clientImage,name, tes
             <Image
               src={clientImage}
               alt='client Image'
+              sizes='w-full h-full'
               fill
             />
           </div>
