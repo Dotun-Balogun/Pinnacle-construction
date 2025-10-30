@@ -1,5 +1,6 @@
 import React from 'react'
 import FaintText from '../ui/FaintText'
+import ContactForm from '../ContactForm'
 
 const Quote = () => {
     return (
@@ -26,8 +27,8 @@ const Quote = () => {
                     </div>
                 </div>
                 <div className='lg:absolute left-1/2 top-1/2 lg:-translate-y-1/2 bg-white '>
-                    <div className='bg-primary w-[580px] h-[550px]'>
-
+                    <div className='bg-primary lg:w-[580px] h-[550px] flex items-center justify-center'>
+                        <ContactForm/>
                     </div>
 
                 </div>

@@ -6,6 +6,7 @@ import Service from '@/components/sections/Service'
 import How from "@/components/sections/How"
 import LatestProject from "@/components/sections/LatestProject"
 import Quote from "@/components/sections/Quote"
+import Testimonial from "@/components/sections/Testimonial"
 const LandingPage = () => {
   return (
     <div className="flex flex-col" >
@@ -22,6 +23,9 @@ const LandingPage = () => {
 <LatestProject/>
 <Gap/>
 <Quote/>
+<Gap/>
+
+<Testimonial/>
 
     </div>
   )
