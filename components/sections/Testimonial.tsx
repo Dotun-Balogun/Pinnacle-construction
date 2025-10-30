@@ -86,8 +86,6 @@ const Testimonial = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-        <CarouselNext />
         </Carousel>
         
         <div className="flex justify-center gap-2 mt-8 pb-8">
