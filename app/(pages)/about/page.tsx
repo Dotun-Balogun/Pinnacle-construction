@@ -35,7 +35,7 @@ const AboutSection = () => {
               About our company
             </h1>
             <h1 className="lg:text-[50px] text-2xl font-extrabold text-center lg:text-left font-mono">
-              It's all about our construction company
+              It&apos;s all about our construction company
             </h1>
           </div>
 
@@ -45,7 +45,7 @@ const AboutSection = () => {
         <div className="lg:w-1/2 text-[#333] p-4 space-y-10">
           <p className="text-[18px] leading-10 text-center lg:text-left">
             A company is a separate legal entity and can incur debt, sue and be
-            sued. The company’s shareholders the owners can limit their personal
+            sued. The company&apos;s shareholders the owners can limit their personal
             liability and are generally not responsible for company debts. A
             company is a complex business structure and has high set-up and
             reporting costs. You can form a company as either a private also
@@ -54,7 +54,7 @@ const AboutSection = () => {
             private construction company.
           </p>
 
-          \          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
             {features.map((item) => (
               <motion.div
                 key={item.id}

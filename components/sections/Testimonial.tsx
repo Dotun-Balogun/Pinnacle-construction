@@ -43,7 +43,7 @@
 import React from 'react'
 import FaintText from '../ui/FaintText'
 import TestimonialCard from '../ui/card/TestimonialCard'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '../ui/carousel'
+import { Carousel, CarouselContent, CarouselItem,  type CarouselApi } from '../ui/carousel'
 import { testimonials } from '@/app/data/TestimonialData'
 
 const Testimonial = () => {

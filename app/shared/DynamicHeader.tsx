@@ -1,6 +1,4 @@
-import { ChevronsLeftIcon, ChevronsLeftRightIcon, House } from "lucide-react"
 import Navbar from "./Navbar"
-import { FaAngleDoubleRight, FaChevronLeft } from "react-icons/fa"
 import BreadCrumb from "@/components/BreadCrumb"
 
 const DynamicHeader = () => {
