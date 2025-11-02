@@ -11,7 +11,6 @@ const FeatureAtGlance = () => {
   return (
     <div className="min-h-screen lg:pb-40">
       <div className="relative min-h-screen flex flex-col py-10 ">
-        {/* Optimized Background */}
         <Image
           src={background}
           alt="Background"
@@ -20,7 +19,6 @@ const FeatureAtGlance = () => {
           className="object-cover object-center -z-10"
         />
 
-        {/* Content */}
         <div className="max-w-7xl mx-auto px-4 flex flex-col space-y-8 text-white z-10">
           <motion.div className="flex flex-col items-center justify-center">
             <motion.div

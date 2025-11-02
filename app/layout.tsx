@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-// import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
+import BackToTop from "./shared/BackToTop";
 
 
 const inter = Inter({
@@ -30,13 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${poppins.variable} min-h-screen flex flex-col antialiased`}
+        className={`${inter.variable} ${poppins.variable} relative min-h-screen flex flex-col antialiased`}
       >
         <main className='flex-1'>
-          {/* <Navbar/> */}
             {children}
-        <Footer/>
         </main>
+                <Footer/>
+            <BackToTop/>
+
       </body>
     </html>
   );

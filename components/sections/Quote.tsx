@@ -26,11 +26,10 @@ const Quote = () => {
                             forget to share it on social media.</span>
                     </div>
                 </div>
-                <div className='lg:absolute left-1/2 top-1/2 lg:-translate-y-1/2 bg-white '>
-                    <div className='bg-primary lg:w-[580px] h-[550px] flex items-center justify-center'>
+                <div className='lg:absolute left-1/2 top-1/2 lg:-translate-y-1/2 bg-white  '>
+                    <div className='bg-primary lg:w-[580px] h-[600px] flex items-center justify-center '>
                         <ContactForm/>
                     </div>
-
                 </div>
             </div>
         </div>

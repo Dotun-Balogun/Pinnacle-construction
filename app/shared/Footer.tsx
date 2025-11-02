@@ -6,7 +6,6 @@ import logo from '@/assets/images/footer-logo-construction.png'
 const Footer= () => {
   return (
     <footer className="bg-[#1E2A39] text-white py-12 flex flex-col items-center text-center px-4 space-y-8">
-      {/* Logo + Brand Name */}
       <div className="flex flex-col items-center space-y-2">
         {/* Placeholder logo */}
         <Image
@@ -17,7 +16,6 @@ const Footer= () => {
         
       </div>
 
-      {/* Description */}
       <div className="max-w-lg text-gray-300 leading-relaxed space-y-2">
         <p>
           A company is any entity that engages in business, commercial, or
@@ -44,6 +42,9 @@ const Footer= () => {
         />
         <SocialIcon icon={<FaYoutube />} hoverColor="#FF0000" label="YouTube" />
       </div>
+      <div className='w-full h-[40px] bg-gray-300'>
+        <h1> copyright@ Olamidotun {new Date().getFullYear()}</h1>
+      </div>
     </footer>
   );
 };
@@ -56,7 +57,6 @@ interface SocialIconProps {
   label: string;
 }
 
-/* Subcomponent with Framer Motion animation */
 const SocialIcon= ({ icon, hoverColor, label }:SocialIconProps) => {
   return (
     <motion.div

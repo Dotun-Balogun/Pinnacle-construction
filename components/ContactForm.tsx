@@ -11,8 +11,8 @@ import { Button } from "@/components/ui/button";
 
 const ContactForm = () => {
   return (
-    <section className=" p-8 rounded-md max-w-3xl mx-auto">
-      <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section className="  rounded-md max-w-3xl mx-auto">
+      <form className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Name */}
         <div className="flex flex-col space-y-2">
           <label className="text-sm font-medium text-black">
