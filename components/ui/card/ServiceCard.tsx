@@ -6,7 +6,6 @@ import * as motion from 'motion/react-client';
 import { Variants } from "motion";
 
 type ServiceCardProps = {
-  id?: number;
   image: StaticImageData;
   title: string;
   description: string;
@@ -29,7 +28,6 @@ const BounceVariant: Variants = {
 };
 
 const ServiceCard = ({
-  id,
   image,
   title,
   description,

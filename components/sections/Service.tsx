@@ -6,7 +6,6 @@ import safetyIcon from '@/assets/images/safety-icon.png'
 import Gap from "../ui/Gap";
 import Image from "next/image";
 import * as motion from 'motion/react-client'
-import { Variants } from "motion";
 import { ZoomInOutVariant } from "@/app/animation/animation";
 import { Button } from "../ui/button";
 
