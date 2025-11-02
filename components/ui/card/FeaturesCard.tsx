@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import * as motion from "motion/react-client";
 import { ChevronDown } from "lucide-react";
 import { Button } from "../button";
-import service1 from "@/assets/images/service-1.jpg";
 
 
 
