@@ -21,9 +21,9 @@ const FeaturesCard = ({title, description, image,buttonText='Read more....'}:Fea
   return (
     <div
       className="relative [perspective:1000px] min-w-[315px] lg:min-w-[390px] lg:max-w-[390px] xl:min-w-[390px] xl:max-w-[390px] h-[485px] flex justify-between"
-      onMouseEnter={() => setFlipped(true)} // Desktop hover
-      onMouseLeave={() => setFlipped(false)} // Desktop hover end
-      onClick={() => setFlipped(!flipped)} // Mobile tap toggle
+      onMouseEnter={() => setFlipped(true)} 
+      onMouseLeave={() => setFlipped(false)} 
+      onClick={() => setFlipped(!flipped)} 
     >
       {/* Flip container */}
       <motion.div

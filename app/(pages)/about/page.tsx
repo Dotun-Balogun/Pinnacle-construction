@@ -9,6 +9,7 @@ import Image from 'next/image'
 import background from '@/assets/images/row-bg.jpg'
 import safetyImage from '@/assets/images/portfolio6-1.jpg'
 import StatCard from '@/components/ui/card/StatCard'
+import Gap from '@/components/ui/Gap'
 
 const features = [
   { id: 1, text: 'Limited liability for shareholders.' },
@@ -132,6 +133,7 @@ const AboutSection = () => {
 
 
         </div>
+        <Gap/>
         <div className=" flex flex-col justify-between  md:flex-row-reverse   lg:min-h-screen">
       
       <div className='flex flex-col w-full p-4 lg:gap-y-4 '>

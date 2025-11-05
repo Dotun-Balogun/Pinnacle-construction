@@ -29,10 +29,11 @@ type MenuList = {
 export const menuList: MenuList[] = [
   { id: 1, icon: FaHome, path: "/" },
   { id: 2, name: "About", path: "/about" },
-  { id: 3, name: "Faq", path: "/faq" },
-  { id: 4, name: "Blog", path: "/blog" },
+  {id:3, name:"Service", path:"/service" },
+  { id: 4, name: "Faq", path: "/faqs" },
+  { id: 5, name: "Blog", path: "/blog" },
   {
-    id: 5,
+    id: 6,
     name: "Shop",
     path: "#",
     dropdown: [

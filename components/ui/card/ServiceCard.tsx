@@ -13,7 +13,6 @@ type ServiceCardProps = {
   isLarge?: boolean;
 };
 
-// bounce animation variant
 const BounceVariant: Variants = {
   still: { y: 0 },
   bounce: {

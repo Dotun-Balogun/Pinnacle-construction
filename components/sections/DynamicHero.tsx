@@ -23,8 +23,8 @@ export const DynamicHero = () => {
         }}
         plugins={[
           Autoplay({
-            delay: 4000, // 4 seconds per slide
-            stopOnInteraction: false, // keep playing after user interaction
+            delay: 10000, 
+            stopOnInteraction: false, 
           }),
         ]}
       >

@@ -8,6 +8,7 @@ import Image from "next/image";
 import * as motion from 'motion/react-client'
 import { ZoomInOutVariant } from "@/app/animation/animation";
 import { Button } from "../ui/button";
+import ServiceCard_3 from "../ui/card/ServiceCard_3";
 
 
 

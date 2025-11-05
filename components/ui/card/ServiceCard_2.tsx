@@ -17,10 +17,9 @@ export default function ServiceCard({ title, image, href }: ServiceCardProps) {
   // Handle tap on mobile
   const handleTap = (e: React.MouseEvent | React.TouchEvent) => {
     if (!isActive) {
-      e.preventDefault(); // prevent link navigation on first tap
+      e.preventDefault(); 
       setIsActive(true);
     } else {
-      // second tap navigates
       setIsActive(false);
     }
   };
@@ -47,7 +46,6 @@ export default function ServiceCard({ title, image, href }: ServiceCardProps) {
           sizes="(max-width: 768px) 100vw, 408px"
         />
 
-        {/* Amber Overlay (Default) */}
         <motion.div
           variants={{
             rest: { opacity: 1 },
