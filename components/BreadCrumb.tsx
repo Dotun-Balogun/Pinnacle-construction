@@ -10,12 +10,9 @@ const BreadCrumb = () => {
 
   // Custom display names for specific paths
   const pathDisplayNames: Record<string, string> = {
-    "faqs": "Frequently Asked Questions",
+    // "faqs": "Frequently Asked Questions",
     "about": "About",
-    "about-us": "About Us",
     "contact-us": "Contact Us",
-    "user-profile": "User Profile",
-    "dashboard": "Dashboard",
   };
 
   // Get the current page name

@@ -99,7 +99,7 @@ const AboutSection = () => {
           ))}
         </section>
 
-        <div className="relative min-h-screen flex flex-col py-10 ">
+        <div className="relative lg:min-h-screen flex flex-col py-10 ">
           <Image
             src={background}
             alt="Background"
