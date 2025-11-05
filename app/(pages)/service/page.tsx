@@ -48,7 +48,7 @@ const servicesData = [
 
   return (
     <div className="lg:min-h-screen space-y-15 ">
-      <div className="flex flex-col  ">
+      <div className="flex flex-col mt-10 ">
         <FaintText
           backgroundText="Services"
           mainText="What we can do for you"
@@ -60,7 +60,7 @@ const servicesData = [
           Our construction Services
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-18 lg:gap-4 max-w-7xl   mx-auto place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-18 lg:gap-4 max-w-7xl  mt-10 p-4  mx-auto place-items-center">
           {servicesData.map((service) => (
             <ServiceCard_3 
             key={service.id} 
