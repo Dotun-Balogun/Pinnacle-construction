@@ -32,8 +32,9 @@ export const menuList: MenuList[] = [
   {id:3, name:"Service", path:"/service" },
   { id: 4, name: "Faq", path: "/faqs" },
   { id: 5, name: "Blog", path: "/blog" },
+  {id:6, name:"Contact",path:"/contact"},
   {
-    id: 6,
+    id: 7,
     name: "Shop",
     path: "#",
     dropdown: [
