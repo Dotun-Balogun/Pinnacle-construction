@@ -63,7 +63,7 @@ const Testimonial = () => {
   }, [api])
 
   return (
-    <div className='min-h-screen '>
+    <div className='lg:min-h-screen '>
       <div>
         <FaintText backgroundText='Testimonials' mainText='See what says our Happy Clients' />
         <h1 className="text-primary font-mono text-2xl tracking-wide lg:text-2xl text-center lg:text-left lg:hidden">

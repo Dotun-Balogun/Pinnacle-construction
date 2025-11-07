@@ -9,7 +9,7 @@ import { ZoomInOutVariant } from "@/app/animation/animation";
 
 const FeatureAtGlance = () => {
   return (
-    <div className="min-h-screen lg:pb-40">
+    <div className="lg:min-h-screen lg:pb-40">
       <div className="relative min-h-screen flex flex-col py-10 ">
         <Image
           src={background}

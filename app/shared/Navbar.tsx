@@ -84,13 +84,16 @@ const Navbar = () => {
                     <FaSearch size={20} />
                     <span>Search</span>
                   </button>
-                  
-                  <Button 
+                <Link href={'/contact'}>
+                <Button 
+                   
                     className="w-full  px-6 text-secondary py-6 rounded-none hover:text-white hover:bg-secondary transition-colors"
                     onClick={handleCloseMobileMenu}
                   >
                     Free Consultation
                   </Button>
+                </Link>
+                  
                 </div>
               </div>
             </SheetContent>

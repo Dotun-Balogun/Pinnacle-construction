@@ -26,10 +26,10 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className='px-4 py-10'>
+    <div className='px- py-10'>
 
   <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center'>
-       <div className='max-w-lg'>
+       <div className='px-6'>
          <div className="flex flex-col ml-0  ">
             <FaintText
               backgroundText="Contact"
@@ -67,7 +67,7 @@ const ContactPage = () => {
       ))}
     </div>
        </div>
-       <div className='bg-secondary'>
+       <div className='bg-secondary w-full'>
 <ContactForm_2/>
        </div>
   </div>
