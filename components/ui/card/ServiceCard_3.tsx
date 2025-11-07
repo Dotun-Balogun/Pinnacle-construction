@@ -5,7 +5,7 @@ import { Button } from '../button';
 
 
 interface ServiceData {
-  id: number;
+  id?: number;
   title: string;
   description: string;
   icon: React.ReactNode;
