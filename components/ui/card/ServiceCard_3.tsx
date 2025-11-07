@@ -5,12 +5,11 @@ import { Button } from '../button';
 
 
 interface ServiceData {
-  id?: number;
   title: string;
   description: string;
   icon: React.ReactNode;
 }
-export  default function ServiceCard_3({ id,title, description,icon}:ServiceData) {
+export  default function ServiceCard_3({ title, description,icon}:ServiceData) {
   const [isActive, setIsActive] = useState(false);
 
   return (
