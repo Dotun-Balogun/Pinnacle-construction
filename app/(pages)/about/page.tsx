@@ -28,7 +28,7 @@ const stats = [
     { id: 4, label: "Awards Won", end: 15 },
   ];
 
-const AboutSection = () => {
+const AboutPage = () => {
   return (
     <section className="relative w-full bg-white py-20 ">
 
@@ -197,4 +197,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default AboutPage
