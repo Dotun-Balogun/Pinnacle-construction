@@ -1,11 +1,10 @@
-// app/products/[id]/page.tsx
 import { getProductById, getAllProducts } from '@/app/data/ProductData';
 import { notFound } from 'next/navigation';
 import ProductDetail from '@/app/(pages)/shop/ProductDetail';
 
 
 
-// Generate static params for static generation (optional but recommended)
+// Generate static params for static generation 
 export async function generateStaticParams() {
   const products = await getAllProducts();
   
@@ -18,9 +17,10 @@ export async function generateStaticParams() {
 // Page Component
 export default async function ProductPage({ 
   params 
-}: { 
-  params: { productId: string} 
-}) {
+}: any
+  // params: { productId: string} 
+
+) {
   const product = await getProductById(params.productId);
   
   if (!product) {
