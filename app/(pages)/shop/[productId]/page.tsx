@@ -2,7 +2,9 @@ import { getProductById, getAllProducts } from '@/app/data/ProductData';
 import { notFound } from 'next/navigation';
 import ProductDetail from '@/app/(pages)/shop/ProductDetail';
 
-
+type ProductDetailPageProp ={
+  params:Promise<{ productId: string }>
+}
 
 // Generate static params for static generation 
 export async function generateStaticParams() {
@@ -17,11 +19,10 @@ export async function generateStaticParams() {
 // Page Component
 export default async function ProductPage({ 
   params 
-}: any
-  // params: { productId: string} 
+}: ProductDetailPageProp) {
+  const productId = await params;
 
-) {
-  const product = await getProductById(params.productId);
+  const product = await getProductById((await params).productId);
   
   if (!product) {
     notFound();
