@@ -39,7 +39,7 @@ export const menuList: MenuList[] = [
     path: "#",
     dropdown: [
       { name: "Shops", path: "/shop" },
-      { name: "Cart", path: "/carts" },
+      { name: "Cart", path: "/cart" },
       { name: "WishList", path: "/wish-list" },
     ],
   },
