@@ -87,4 +87,6 @@ const Hero = () => {
 }
 
 export default Hero
+14:8  Warning: 'generatemetadata' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+74:9  Warning: 'productId' is assigned a value but never used.  @typescript-eslint/no-unused-vars
 

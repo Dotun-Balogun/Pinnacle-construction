@@ -11,7 +11,7 @@ type ProductDetailPageProp ={
   params:Promise<{ productId: string }>
 }
 
-const  generatemetadata = async({params}:ProductDetailPageProp):Promise<Metadata>=>{
+export const  generatemetadata = async({params}:ProductDetailPageProp):Promise<Metadata>=>{
  const product = (await params).productId
   const productInfo = await getProductById(product);
   if(!productInfo){
@@ -71,7 +71,7 @@ export async function generateStaticParams(){
 export default async function ProductPage({ 
   params 
 }: ProductDetailPageProp) {
-  const productId = await params;
+  // const productId = await params;
 
   const product = await getProductById((await params).productId);
   

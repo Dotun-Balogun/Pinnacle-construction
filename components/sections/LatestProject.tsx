@@ -6,7 +6,6 @@ import { portfolioData } from '@/app/data/PortfolioData';
 
 const LatestProject = () => {
   
-console.log(portfolioData);
   return (
     <div className='lg:min-h-screen'>
                 <div className="flex flex-col lg:gap-10">
