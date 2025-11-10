@@ -6,7 +6,7 @@ const Frame = () => {
     return (
 
         <div className='relative w-[317px]  h-[284px] '>
-            <div className='absolute bg-red-500 right-2 top-8 w-[317px]  h-[284px]'>
+            <div className='absolute  right-2 top-8 w-[317px]  h-[284px]'>
                 <Image
                     src={workers}
                     alt="construction team"

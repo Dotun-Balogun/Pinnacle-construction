@@ -14,8 +14,56 @@ import { FaHome, FaCar, FaHammer, FaBuilding } from 'react-icons/fa';
 import background from "@/assets/images/row-bg.jpg";
 import FeaturesCard from "@/components/ui/card/FeaturesCard";
 import { featuresData } from "@/app/data/FeaturesDate";
+import type { Metadata } from "next"
 
-
+ export const metadata: Metadata = {
+  title: "Our Services | Pinnacle Construction",
+  description:
+    "Explore Pinnacle Construction’s full range of professional building services — from residential and commercial projects to road construction, maintenance, and modern architectural design.",
+  keywords: [
+    "construction services",
+    "building contractors",
+    "pinnacle construction",
+    "house construction",
+    "road construction",
+    "maintenance services",
+    "modern building design",
+    "construction company Nigeria",
+  ],
+  authors: [{ name: "Pinnacle Construction" }],
+  metadataBase: new URL("https://pinnacle-construction.vercel.app"),
+  alternates: {
+    canonical: "https://pinnacle-construction.vercel.app/services",
+  },
+  openGraph: {
+    title: "Our Services | Pinnacle Construction",
+    description:
+      "Discover high-quality construction services — residential, commercial, roadwork, and maintenance. Pinnacle Construction builds with integrity, safety, and precision.",
+    url: "https://pinnacle-construction.vercel.app/services",
+    siteName: "Pinnacle Construction",
+    images: [
+      {
+        url: "/logo-construction.png",
+        width: 1200,
+        height: 630,
+        alt: "Pinnacle Construction logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services | Pinnacle Construction",
+    description:
+      "Explore Pinnacle Construction’s trusted construction services: building, roadwork, maintenance, and modern infrastructure projects.",
+    images: ["/logo-construction.png"],
+  },
+  icons: {
+    icon: "/logo-construction.png",
+    apple: "/logo-construction.png",
+  },
+}
 
 
 const ServicePage = () => {

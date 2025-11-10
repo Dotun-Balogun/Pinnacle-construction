@@ -10,6 +10,45 @@ import {
 import { faqData } from '@/app/data/FaqData'
 import Frame from '@/components/ui/Frame'
 import ContactForm_2 from '@/components/ContactForm_2'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "FAQ | Pinnacle Construction",
+  description:
+    "Find answers to the most common questions about Pinnacle Construction’s services, projects, and company policies. Contact us if you can’t find your answer!",
+  keywords: [
+    "construction FAQ",
+    "pinnacle construction questions",
+    "building services",
+    "home renovation",
+    "construction company",
+  ],
+  openGraph: {
+    title: "FAQ | Pinnacle Construction",
+    description:
+      "Answers to frequently asked questions about Pinnacle Construction services and projects.",
+    url: "https://pinnacle-construction.vercel.app/faq",
+    siteName: "Pinnacle Construction",
+    images: [
+      {
+        url: "/logo-construction.png",
+        width: 800,
+        height: 600,
+        alt: "Pinnacle Construction Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ | Pinnacle Construction",
+    description:
+      "Answers to frequently asked questions about Pinnacle Construction.",
+    images: ["/logo-construction.png"],
+  },
+}
+
 const Faq = () => {
   return (
     <div className='max-w-7xl px-4 mx-auto'>
@@ -38,43 +77,35 @@ const Faq = () => {
               <h1 className='text-2xl font-bold'>F.A.QS</h1>
               <h4>Frequently Asked Questions</h4>
             </div>
-
           </div>
+
           <Accordion type="single" collapsible className="w-full space-y-2 ">
             {faqData.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border  transition-colors data-[state=open]:bg-secondary"
+                className="border transition-colors data-[state=open]:bg-secondary"
               >
                 <AccordionTrigger
-                  className="text-gray-700 font-bold data-[state=open]:rounded-none rounded-none hover:no-underline data-[state=open]:text-white rouned-none border-b border-b-gray-500 w-full px-2"
+                  className="text-gray-700 font-bold data-[state=open]:rounded-none hover:no-underline data-[state=open]:text-white border-b border-b-gray-500 w-full px-2"
                 >
                   {item.question}
                 </AccordionTrigger>
 
-                <AccordionContent className=" text-white   px-2 ">
+                <AccordionContent className="text-white px-2">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
-
-
         </div>
 
         <div className='space-y-10'>
-          <Frame/>
-
-
-          <ContactForm_2/>
+          <Frame />
+          <ContactForm_2 />
         </div>
       </div>
-      <div>
-
-      </div>
     </div>
-
   )
 }
 

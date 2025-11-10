@@ -3,6 +3,55 @@ import FaintText from '@/components/ui/FaintText'
 import { Phone, Mail, MapPin } from 'lucide-react';
 import * as motion from 'motion/react-client'
 
+
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact Us | Pinnacle Construction",
+  description:
+    "Get in touch with Pinnacle Construction today. Reach out via phone, email, or our contact form for project inquiries, estimates, or partnership opportunities.",
+  keywords: [
+    "contact construction company",
+    "pinnacle construction contact",
+    "construction services Nigeria",
+    "building contractors phone number",
+    "construction project inquiry",
+  ],
+  authors: [{ name: "Pinnacle Construction" }],
+  metadataBase: new URL("https://pinnacle-construction.vercel.app"),
+  alternates: {
+    canonical: "https://pinnacle-construction.vercel.app/contact",
+  },
+  openGraph: {
+    title: "Contact Pinnacle Construction",
+    description:
+      "Reach Pinnacle Construction for professional construction services and project consultations. Call, email, or use our online form today.",
+    url: "https://pinnacle-construction.vercel.app/contact",
+    siteName: "Pinnacle Construction",
+    images: [
+      {
+        url: "/logo-construction.png",
+        width: 1200,
+        height: 630,
+        alt: "Pinnacle Construction logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Pinnacle Construction",
+    description:
+      "Need a reliable construction partner? Contact Pinnacle Construction for expert project consultation, building, and maintenance services.",
+    images: ["/logo-construction.png"],
+  },
+  icons: {
+    icon: "/logo-construction.png",
+    apple: "/logo-construction.png",
+  },
+}
+
 const ContactPage = () => {
     const contactItems = [
     {

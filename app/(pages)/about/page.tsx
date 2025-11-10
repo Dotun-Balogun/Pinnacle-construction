@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
 import * as  motion from 'motion/react-client'
@@ -10,6 +9,58 @@ import background from '@/assets/images/row-bg.jpg'
 import safetyImage from '@/assets/images/portfolio6-1.jpg'
 import StatCard from '@/components/ui/card/StatCard'
 import Gap from '@/components/ui/Gap'
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: "About Us | Pinnacle Construction",
+  description:
+    "Learn about Pinnacle Construction — a trusted construction company delivering high-quality residential, commercial, and industrial projects with safety, innovation, and expertise at the forefront.",
+  keywords: [
+    "pinnacle construction",
+    "construction company",
+    "building contractors",
+    "commercial construction",
+    "residential construction",
+    "construction services",
+    "infrastructure projects",
+    "engineering and design",
+  ],
+  authors: [{ name: "Pinnacle Construction" }],
+  metadataBase: new URL("https://pinnacle-construction.vercel.app"),
+  alternates: {
+    canonical: "https://pinnacle-construction.vercel.app/about",
+  },
+  openGraph: {
+    title: "About Us | Pinnacle Construction",
+    description:
+      "Pinnacle Construction — Experienced in delivering high-quality building projects on time and with precision. Discover our company’s values, safety standards, and expert team.",
+    url: "https://pinnacle-construction.vercel.app/about",
+    siteName: "Pinnacle Construction",
+    images: [
+      {
+        url: "/logo-construction.png",
+        width: 1200,
+        height: 630,
+        alt: "Pinnacle Construction company logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Pinnacle Construction",
+    description:
+      "Discover Pinnacle Construction’s commitment to quality, innovation, and safety in every construction project.",
+    images: ["/logo-construction.png"],
+  },
+  icons: {
+    icon: "/logo-construction.png",
+    apple: "/logo-construction.png",
+  },
+}
+
 
 const features = [
   { id: 1, text: 'Limited liability for shareholders.' },

@@ -25,3 +25,8 @@ export const testimonials = [
     testimonialText: '"Exceptional quality and craftsmanship! Lavish Gardens exceeded our expectations in every way. They took our ideas and turned them into reality. The final result is stunning and we couldn\'t be happier with our new outdoor living space."'
   }
 ]
+
+
+
+
+
