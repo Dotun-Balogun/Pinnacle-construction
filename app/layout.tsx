@@ -25,7 +25,10 @@ export const metadata: Metadata = {
   
   description:
     "Pinnacle Construction — experts in modern building and renovation projects. Quality craftsmanship, timely delivery, and exceptional service for residential and commercial projects.",
-  
+   other:{
+      "google-site-verification":"sgqRyMC0zaQeAUzTwbHgoLiebrL120sUQNJaEwj6Chg",
+    }
+  ,
   keywords: [
     "construction",
     "building services",
@@ -57,6 +60,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
     url: 'https://pinnacle-construction.vercel.app',
+   
   },
   
   twitter: {
