@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "Pinnacle Construction — experts in modern building and renovation projects. Quality craftsmanship, timely delivery, and exceptional service for residential and commercial projects.",
    other:{
-      "google-site-verification":"sgqRyMC0zaQeAUzTwbHgoLiebrL120sUQNJaEwj6Chg",
+      "google-site-verification":"npmsgqRyMC0zaQeAUzTwbHgoLiebrL120sUQNJaEwj6Chg",
     }
   ,
   keywords: [
